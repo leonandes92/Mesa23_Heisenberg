@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding: 5.625rem;
+}
+
+a{
+    font-family: 'Roboto';
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1.25rem;
+}
+
+h1{
+    font-size: 1.875rem;
+}
+
+h2, h3{
+    text-align: center;
+    padding: 0.9375rem 0;
+}
+
+header ul{
+    display: flex;
+    gap: 0.312rem;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header li a{
+    text-decoration: none;
+    color: white;
+    padding: .625rem;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+    text-transform: uppercase;
+}
+
+header li a:hover{
+    background-color: yellow;
+    color: black;
+    padding: 20px;
+    
+}
+
+#logo{
+    width: 80px;
+    margin-left: 30px;
+}
+
+#banner{
+    background-image: url(../img/ww_pistola.gif);
+    height: calc(100vh - 7rem);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    background-color: #181818;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    padding: .937rem 3.75rem;
+}
+
+#legendary{
+    margin-top: 4rem;
+}
+
+.page-title {
+    color: rgb(240, 216, 0);
+    padding-left: 64px;
+    margin-bottom: 6px;
+}
+
+.page-description {
+    padding-left: 64px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 50px;
+}
+
+.grid-video{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.125rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: o auto;
+    cursor: pointer;
+}
+
+.card-video img{
+    height: 21.875rem;
+    width: 100%;
+    object-fit: cover;
+    transition: all .3s ease-in-out;
+}
+
+.img-container{
+    height: 21.875rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-video img:hover{
+    transform: scale(1.1);
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.video-title {
+    margin: 8px 0 12px;
+    color: rgb(240, 216, 0);
+    margin-top: 20px;
+}
+
+.video-description {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
+
+.video-subtitle {
+    color: rgb(240, 216, 0);
+    margin-top: 12px;
+    display: block;
+}
+
+.video-link {
+    text-align: right;
+    display: block;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+#rpg + #rts{
+    margin-top: 3.75rem;
+}
+
+.button{
+    width: 100%;
+    display: block;
+    color: #181818;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: .625rem 1rem;
+    font-weight: bold;
+    border: none;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    text-align: right;
+    background-color: #999;
+}
+
+.button:hover{
+    background-color: rgb(240, 216, 0);
+    color: black;
+}
+
+footer{
+    background-color:#181818;
+    color:#999;
+    text-decoration: none;
+   /*  letter-spacing: 2px; */
+    padding: 14px 16px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    line-height: 1.8;
+    display: block;
+}
+
+.btn{
+    color:rgb(240, 216, 0);
+    background:#181818;
+    padding: 10px 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.btn:hover{
+    border: none;
+    background:rgb(240, 216, 0);
+    color:black;
+    padding: 20px 20px; #000;
+    color: #1b1b1b;
+}
+
+/* Responsividade */
+
+@media(min-width: 509px) and (max-width: 492px){
+    header{
+    flex-direction: column;
+    }
+    header li{
+    margin-bottom: 1.25rem;
+    }
+    header li{
+    margin-bottom: .625rem;
+    }
+}
+
+@media(max-width: 343px){
+    header li a{
+    padding: .312rem;
+    }
+
+    main{
+    padding: .93rem 1.875rem;
+    }
+}
+
+@media(min-width: 786px) and (max-width: 1065px){
+    .grid-video{
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 785px){
+    .grid-video{
+    grid-template-columns: 1fr;
+    }
+}
