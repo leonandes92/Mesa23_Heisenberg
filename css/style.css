@@ -181,6 +181,10 @@ main{
     color: black;
 }
 
+a:link{
+    text-decoration: none;
+}
+
 footer{
     background-color:#181818;
     color:#999;
